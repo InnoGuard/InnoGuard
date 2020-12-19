@@ -5,7 +5,7 @@ Use of Computer Vision, OCR and Keylogger to extract data from private messaging
 
 **Usage of Screenshot to Text:**
 
-`gsst = getScreenShotText()
-raw_text = gsst.getScreenshotText("your_image.jpeg")`
+`gsst = getScreenShotText()`
+`raw_text = gsst.getScreenshotText("your_image.jpeg")`
 
 
