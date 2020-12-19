@@ -3,5 +3,3 @@ Use of EasyOCR's Text Detection and Recognition modulde in conjunction with Goog
 
 
 [Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)(https://colab.research.google.com/gist/rajeevratan84/45ca3d6c74175a204ca644ae1605daa4/ocr-on-screenshots]
-
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/weiji14/deepbedmap/]
