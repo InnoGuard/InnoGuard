@@ -4,11 +4,11 @@ import browserhistory as bh  # Used to extract Browsing History
 from pysafebrowsing import SafeBrowsing
 from google.cloud import vision
 import csv
-from scripts.db import *
-from scripts import Constants
+from libs import *
+import libs.Constants
+import libs.mongodb
 
-
-API_KEY = Constants.GC_API_KEY
+API_KEY = libs.Constants.GC_API_KEY
 
 
 def get_history():
@@ -43,8 +43,9 @@ def check_site(sites):  # input websites
     return r
 
 
-def main():
+def get_browser_results():
     urls, user = get_history()
+
     for url in urls:
         dict = {
             "user": user,
@@ -53,9 +54,6 @@ def main():
         }
         # @TODO: If !is_inserted no db connection, must exit
         # print(r["Inserted"])
-        r = browser_responses.insert_one(dict)
-    print("Successsfully pushed to MongoDB.")
+        r = libs.mongodb.browser_responses.insert_one(dict)
 
-
-if __name__ == '__main__':
-    main()
+    return urls
