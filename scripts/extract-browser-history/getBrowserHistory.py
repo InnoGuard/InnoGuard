@@ -4,8 +4,8 @@ import browserhistory as bh  # Used to extract Browsing History
 from pysafebrowsing import SafeBrowsing
 from google.cloud import vision
 import csv
-from InnoGuard.libs.db.mongodb import *
-from InnoGuard import Constants
+from scripts.db import *
+from scripts import Constants
 
 
 API_KEY = Constants.GC_API_KEY

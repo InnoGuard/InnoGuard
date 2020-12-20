@@ -2,8 +2,8 @@ from google.cloud import vision
 import cv2
 import io
 import browserhistory as bh
-# from InnoGuard.libs.db.mongodb import *
-from InnoGuard import Constants
+from scripts.db.mongodb import *
+from scripts import Constants
 
 # user = bh.get_username()
 API_KEY = Constants.GC_API_KEY

@@ -1,6 +1,6 @@
 # Example of response object can be found here:
 # https://dev.tisane.ai/docs/services/5a3b6668a3511b11cc292655/operations/5a3b7177a3511b11cc29265c
-from InnoGuard import Constants
+from scripts import Constants
 import http.client
 import urllib.request
 import urllib.parse

@@ -1,5 +1,6 @@
 browserhistory == 0.1.2
 dotenv == 0.0.5
+easyocr
 google-api-core==1.16
 google-cloud-language
 google-cloud-vision
