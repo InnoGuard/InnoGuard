@@ -1,2 +1,5 @@
 # misc
+__pycache__/
 .env
+chrome_history.csv
+Constants.py
