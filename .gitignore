@@ -2,4 +2,4 @@
 __pycache__/
 .env
 chrome_history.csv
-scripts/libs/Constants.py
+Constants.py
