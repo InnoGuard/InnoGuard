@@ -2,9 +2,7 @@ import pandas as pd
 import browserhistory as bh  # Used to extract Browsing History
 # Uses Google's safe browsing API to test if websites are safe
 from pysafebrowsing import SafeBrowsing
-from google.cloud import vision
 import csv
-from libs import *
 import libs.Constants
 import libs.mongodb
 
@@ -47,6 +45,8 @@ def get_browser_results():
     urls, user = get_history()
 
     for url in urls:
+        if url[0] != 'h':
+            continue
         dict = {
             "user": user,
             "url": url,
@@ -54,6 +54,9 @@ def get_browser_results():
         }
         # @TODO: If !is_inserted no db connection, must exit
         # print(r["Inserted"])
-        r = libs.mongodb.browser_responses.insert_one(dict)
+        r = libs.mongodb.browser_responses.insert(dict, check_keys=False)
 
     return urls
+
+
+get_browser_results()

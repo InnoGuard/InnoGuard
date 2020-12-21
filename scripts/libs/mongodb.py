@@ -1,6 +1,6 @@
 import pymongo
-
-Client = pymongo.MongoClient("mongodb://localhost:27017/")
+import libs.Constants
+Client = pymongo.MongoClient(libs.Constants.MONGODB)
 db = Client["Database"]
 
 users = db["users"]
