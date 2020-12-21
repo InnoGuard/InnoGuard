@@ -1,4 +1,5 @@
 from google.cloud import vision
+from google.cloud.vision import types
 import cv2
 import io
 import browserhistory as bh
@@ -10,11 +11,10 @@ API_KEY = libs.Constants.GC_API_KEY
 
 def get_image_results(image_path):
     client = vision.ImageAnnotatorClient()
+    img = cv2.imread(image_path)
+    img_bytes = cv2.imencode('.jpg', img)[1].tostring() # Encode Image into Bytes
 
-    with io.open(image_path, 'rb') as inference_image:
-        content = inference_image.read()
-
-    image = vision.Image(content=content)
+    image = types.Image(content=img_bytes)
 
     response = client.safe_search_detection(image=image)
 
@@ -38,4 +38,4 @@ def get_image_results(image_path):
                 libs.Constants.likelihood_name[safety.racy]),
         }
 
-        return results
+        return results # To put into front-end
