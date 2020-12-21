@@ -41,9 +41,9 @@ def check_site(sites):  # input websites
     return r
 
 
-def get_browser_results():
+def get_browser_results(push_to_db=False):
     urls, user = get_history()
-
+    browser_results = []
     for url in urls:
         if url[0] != 'h':
             continue
@@ -54,9 +54,11 @@ def get_browser_results():
         }
         # @TODO: If !is_inserted no db connection, must exit
         # print(r["Inserted"])
-        r = libs.mongodb.browser_responses.insert(dict, check_keys=False)
+        browser_results.append(dict)
+        if push_to_db:
+            r = libs.mongodb.browser_responses.insert(dict, check_keys=False)
 
-    return urls
+    return browser_results
 
-
-get_browser_results()
+# get browser data daily
+# apply vision api to get racy sites
