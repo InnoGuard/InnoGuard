@@ -5,8 +5,10 @@ import io
 import browserhistory as bh
 import libs.Constants
 
+
 # user = bh.get_username()
 API_KEY = libs.Constants.GC_API_KEY
+__file__ = libs.Constants.FILE_PATH
 
 
 def get_image_results(image_path):
@@ -39,3 +41,6 @@ def get_image_results(image_path):
         }
 
         return results # To put into front-end
+
+r = get_image_results(__file__ + "test.png") # front-end to upload images for testing
+print(r)

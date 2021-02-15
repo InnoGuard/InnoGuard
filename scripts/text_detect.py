@@ -31,3 +31,7 @@ def analyse_text(text_for_analysis):
     data = json.loads(response.read())
     conn.close()
     return data
+
+
+r = analyse_text("Test String Goes Here")
+print(r)

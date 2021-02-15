@@ -60,5 +60,8 @@ def get_browser_results(push_to_db=False):
 
     return browser_results
 
+
+list = get_browser_results()
+
 # get browser data daily
 # apply vision api to get racy sites

@@ -5,6 +5,7 @@ import argparse
 import cv2
 import time
 
+
 class getScreenShotText:
     def __init__(self):
         self.image = None
