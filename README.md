@@ -6,19 +6,19 @@ InnoGuard is a child protection tool that provides protection for children by cl
 
 ## Table of Contents
 
-- [InnoGuard Tools](#tools)
-    - [OCR Text Detection and Recognition](#easy-ocr)
-    - [Tisane API](#tisane)
-    - [Google's Vision API](#google-vision)
-    - [Google's Speech API](#google-speech)
+- [InnoGuard Tools](#innoguard-tools)
+    - [OCR Text Detection and Recognition](#ocr-text-detection-and-recognition)
     - [Safe Browsing](#safe-browsing)
+    - [Tisane API](#tisane-api)
+    - [Google Vision API](#google-vision-api)
+    - [Google Speech API](#google-speech-api)
 - [Usage](#usage)
-    - [Configuration](@config)
+    - [Configuration](#configuration)
     - [OCR Usage](#ocr-usage)
     - [Safe Browsing Usage](#safe-browsing-usage)
-    - [Tisane API Usage](#tisane-usage)
-    - [Google's Vision Usage](#vision-usage)
-    - [Google's Speech Usage](#speech-usage)
+    - [Tisane API Usage](#tisane-api-usage)
+    - [Google Vision Usage](#google-vision-usage)
+    - [Google Speech Usage](#google-speech-usage)
 - [Future Work](#future-work)
 - [License](#license)
 - [Links](#links)
@@ -29,21 +29,32 @@ InnoGuard is a child protection tool that provides protection for children by cl
 
 Extracts text from images through screenshots.
 
-### Tisane API
-
-ClassifIES violence against children [Cyberbulling, Sexual Comments and Harassment, Grooming, Emotional Abuse and Suicidal Tendencies] through texts.
-
-### Google's Vision API
-
-Determines child inappropriate images.
-
-### Google's Speech API
-
-Allows audio analysis by turning speech to text.
+Example WhatsApp Screenshot   |  OCR Text Extraction
+:----------------------------:|:-------------------------:
+![Ocr-Screenshot](./assets/ocr_screenshots_before.png)  |  ![Text-Extraction](./assets/ocr_screenshots_after.png)
 
 ### Safe Browsing
 
 BrowserHistory Module and SafeBrwosing API are used to determine dangerous, age innapropriate links.
+
+![Safe-browsing](./assets/safe-browsing.gif)
+
+### Tisane API
+
+ClassifIES violence against children [Cyberbulling, Sexual Comments and Harassment, Grooming, Emotional Abuse and Suicidal Tendencies] through texts.
+
+### Google Vision API
+
+Determines child inappropriate images.
+
+![vision-api](./assets/racyimg.gif)
+
+### Google Speech API
+
+Allows audio analysis by turning speech to text.
+
+![speech-api](./assets/speechtotext.gif)
+
 
 ## Usage
 
@@ -67,9 +78,9 @@ Open in colab - https://colab.research.google.com/gist/rajeevratan84/45ca3d6c741
 
 ### Tisane API Usage
 
-### Google's Vision Usage
+### Google Vision Usage
 
-### Google's Speech Usage
+### Google Speech Usage
 
 ## Future Work
 
