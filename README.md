@@ -1,5 +1,7 @@
 # InnoGuard
 
+**N.B: More details and patches coming soon...**
+
 InnoGuard is a child protection tool that provides protection for children by classifying violence against children through texts and audio, and determining age inappropriate images and links.
 
 [![InnoGuard](./assets/innoguard_title.png)]()
@@ -67,7 +69,18 @@ The recorded audio is turned into text and then analysed through Tisane API for 
 
 ### Configuration
 
-**Installation**:
+#### Requirements
+
+**APIs Installation**: 
+
+- To get your **Google API Key**, [click here.](https://developers.google.com/maps/documentation/maps-static/get-api-key)
+- To get your **Tisane API Key**, [create an account by clicking here](https://tisane.ai/signup/)
+  - Then go to **API** or **[https://dev.tisane.ai/developer](https://dev.tisane.ai/developer)** to get your primary and secondary Tisane API keys.
+
+**MongoDB Creation**:
+To create a Mongo Database, [click here.](https://www.mongodb.com/basics/create-database)
+
+#### Project Installation:
 
 To clone and run this application, you'll need [Git](https://git-scm.com) installed on your computer. From your command line:
 
@@ -79,19 +92,15 @@ git clone https://github.com/InnoGuard/InnoGuard.git
 cd InnoGuard
 
 # Create new Python virtual environment [Optional]
-To learn how to create your virtual environment, [click here.](https://uoa-eresearch.github.io/eresearch-cookbook/recipe/2014/11/26/python-virtual-env/)
 
+```
+To get the commands to create your virtual environment, [click here.](https://uoa-eresearch.github.io/eresearch-cookbook/recipe/2014/11/26/python-virtual-env/)
 
+```bash
 # Upon activating the new virtual environment, at root directory, run
 pip3 install -r requirements.txt
 
 ```
-
-**API Installations**: 
-
-- To get your **Google API Key**, [click here.](https://developers.google.com/maps/documentation/maps-static/get-api-key)
-- To get your **Tisane API Key**, [create an account by clicking here](https://tisane.ai/signup/)
-- Then go to **API** or **[https://dev.tisane.ai/developer](https://dev.tisane.ai/developer)** to get your primary and secondary API keys.
 
 **Constants.py File**:
 
@@ -133,6 +142,8 @@ python3 getBrowserHistory.py
 
 ### Tisane API Usage
 
+Coming soon ...
+
 ### Google Vision Usage
 
 ```bash
@@ -151,6 +162,8 @@ python3 getImageResults.py
 
 ### Google Speech Usage
 
+Coming soon ...
+
 ## Future Work
 
 The team at InnoGuard plans to implement:
@@ -158,8 +171,7 @@ The team at InnoGuard plans to implement:
 - **Notification and Reporting System**: Upon identification, InnoGuard shall create a report of all instances mentioned above and send this report to the child’s parents or guardian via email or the police if the danger is high, with varying levels (colours) of danger and importance. 
 
 - **Caribbean Lingo Dataset**: Currently, the APIs used to not consider Caribbean Lingo as shown in the gif below where it detects the Caribbean Phrase "Buss ah wine" as a person.
-
-Thus, the new model would be emphasized and trained against Caribbean Speech Datasets to detect harmful Caribbean Lingo online.
+  - Thus, the new model would be emphasized and trained against Caribbean Speech Datasets to detect harmful Caribbean Lingo online.
 
 - **Chatbot Assistant**:  InnoGuard shall provide real-time emotional support via a chatbot to give tips and consolation.
 
@@ -169,3 +181,5 @@ InnoGuard is licensed under the terms of the MIT Open Source license and is avai
 
 ## Links
 * [YouTube Pitch](https://youtu.be/Ncit5I1Bsxo)
+* Live Website Link Coming soon ...
+
