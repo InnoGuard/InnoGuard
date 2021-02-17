@@ -82,6 +82,7 @@ To create a Mongo Database, [click here.](https://www.mongodb.com/basics/create-
 
 #### Project Installation:
 
+**Step 1**
 To clone and run this application, you'll need [Git](https://git-scm.com) installed on your computer. From your command line:
 
 ```bash
@@ -102,11 +103,12 @@ pip3 install -r requirements.txt
 
 ```
 
-**Constants.py File**:
+**Step 2: Set up the Constants.py File**:
+This is where your API keys are needed, as well as any necessities for the APIs.
+Create a **Constants.py** file under the path scripts/libs/ with the content below:
 
 ```bash
 
-# Create a Constants.py file under the path scripts/libs/ with the content:
 GC_API_KEY = 'your_google_api_key_here'
 MONGODB = "your_mongodb_address"
 
@@ -122,27 +124,44 @@ FILE_PATH = "local path to images and audio, for testing e.g. D:\pythonProjects\
 
 ```
 
+**Step 3: This demonstrates how to run the various aspects of InnoGuard**
+
 ### OCR Usage
 
-Open in colab - https://colab.research.google.com/gist/rajeevratan84/45ca3d6c74175a204ca644ae1605daa4/ocr-on-screenshots
+- Open in Google Colab - https://colab.research.google.com/gist/rajeevratan84/45ca3d6c74175a204ca644ae1605daa4/ocr-on-screenshots
+- Click on **Runtime**, then **Run all** or just press **Ctrl + F9**.
 
 ### Safe Browsing Usage
 
 ```bash
 
-# Go to the Scripts Folder
+# From the root folder (InnoGuard), go to the Scripts Folder 
 cd scripts
 
 # Execute the following Python script:
-python3 getBrowserHistory.py
+python getBrowserHistory.py
 
-# Output from these commands will be displayed via the terminal.
+# Output from this command will be displayed via the mongodb created.
 
 ```
 
 ### Tisane API Usage
 
-Coming soon ...
+```bash
+
+# From the root folder (InnoGuard), go to the Scripts Folder 
+cd scripts
+
+# Execute the following Python script:
+python text_detect.py
+
+# A prompt to enter a sentence will appear:
+# Example Sentence
+You are gorgeous.
+
+# Output from these commands will be displayed via the terminal.
+
+```
 
 ### Google Vision Usage
 
@@ -150,11 +169,15 @@ Coming soon ...
 
 # Attach an image called "test.png" to the root folder
 
-# Go to the Scripts Folder
+# From the root folder (InnoGuard), go to the Scripts Folder
 cd scripts
 
 # Execute the following Python script:
-python3 getImageResults.py
+python getImageResults.py
+
+# A prompt to enter an Image Path will appear:
+# Example of image path:
+D:\uploads\test.png
 
 # Output from these commands will be displayed via the terminal.
 
@@ -162,7 +185,23 @@ python3 getImageResults.py
 
 ### Google Speech Usage
 
-Coming soon ...
+More coming soon...
+
+This requires .wav files. To convert files, [click here!](https://cloudconvert.com/mp3-to-wav)
+
+```bash
+
+# Attach an audio .wav file called "test.wav" to the root folder
+
+# From the root folder (InnoGuard), go to the Scripts Folder
+cd scripts
+
+# Execute the following Python script:
+python speechToText.py
+
+# Output from these commands will be displayed via the terminal.
+
+```
 
 ## Future Work
 
@@ -171,7 +210,7 @@ The team at InnoGuard plans to implement:
 - **Notification and Reporting System**: Upon identification, InnoGuard shall create a report of all instances mentioned above and send this report to the child’s parents or guardian via email or the police if the danger is high, with varying levels (colours) of danger and importance. 
 
 - **Caribbean Lingo Dataset**: Currently, the APIs used to not consider Caribbean Lingo as shown in the gif below where it detects the Caribbean Phrase "Buss ah wine" as a person.
-  - Thus, the new model would be emphasized and trained against Caribbean Speech Datasets to detect harmful Caribbean Lingo online.
+  - Thus, the new model would be emphasized and trained against Caribbean Speech Datasets to detect harmful Caribbean Lingo.
 
 - **Chatbot Assistant**:  InnoGuard shall provide real-time emotional support via a chatbot to give tips and consolation.
 

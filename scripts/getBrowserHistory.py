@@ -8,6 +8,7 @@ import libs.mongodb
 
 API_KEY = libs.Constants.GC_API_KEY
 
+# @TODO: Limit browser history to just 10 first or last sites for demo
 
 def get_history():
     '''
@@ -21,6 +22,7 @@ def get_history():
     # So for now, we would only need the first in the array
     # bh.write_browserhistory_csv()  # Writes history to a csv
 
+    print("Getting Browser History, this can take a while depending on how large your history is...")
     urls = list(zip(*dict_obj))[0]  # Zipping tuples then unpacking for urls
     # Quick User Identifier
     user = bh.get_username()

@@ -11,7 +11,11 @@ import json
 import libs.Constants
 
 
-def analyse_text(text_for_analysis):
+def analyse_text():
+
+    text_for_analysis = input("\nPlease enter a sentence to analyse: ") 
+    print("Sentence entered: ", text_for_analysis) 
+
     headers = {
         # Request headers
         'Content-Type': 'application/json',
@@ -33,5 +37,6 @@ def analyse_text(text_for_analysis):
     return data
 
 
-r = analyse_text("Test String Goes Here")
-print(r)
+r = analyse_text()
+print("\nTisane Sentiment Analysis API Results: ")
+print(r,"\n")

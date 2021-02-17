@@ -11,7 +11,11 @@ API_KEY = libs.Constants.GC_API_KEY
 __file__ = libs.Constants.FILE_PATH
 
 
-def get_image_results(image_path):
+def get_image_results():
+    
+    image_path = input("\nPlease enter the path to the image you wish to test: ") 
+    print("Path entered: ", image_path) 
+
     client = vision.ImageAnnotatorClient()
     img = cv2.imread(image_path)
     img_bytes = cv2.imencode('.jpg', img)[1].tostring() # Encode Image into Bytes
@@ -42,5 +46,6 @@ def get_image_results(image_path):
 
         return results # To put into front-end
 
-r = get_image_results(__file__ + "test.png") # front-end to upload images for testing
-print(r)
+r = get_image_results() # front-end to upload images for testing
+print("\nGoogle Vision API Image Results: ")
+print(r,"\n")
