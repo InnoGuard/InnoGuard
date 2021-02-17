@@ -50,9 +50,13 @@ The links are stored within a Mongo Database and are determined as **malicious**
 
 Classifies violence against children [Cyberbulling, Sexual Comments and Harassment, Grooming, Emotional Abuse and Suicidal Tendencies] through texts.
 
-Personal Attack  |  Death Threats  |  Bigotry  |  Sexual Harassment
-:----------:|:----------:|:----------:|:----------:
-![Personal-Attack](./assets/tisane_personal_attack_appearance.gif)  |  ![Death-Threats](./assets/tisane_personal_attack_death_threats.gif)  |  ![Bigotry](./assets/tisane_bigotry.gif)  |  ![Sexual-Harassment](./assets/tisane_sexual_advances.gif)
+Personal Attack  |  Death Threats  
+:----------:|:----------:
+![Personal-Attack](./assets/tisane_personal_attack_appearance.gif)  |  ![Death-Threats](./assets/tisane_personal_attack_death_threats.gif)  
+
+Bigotry  |  Sexual Harassment
+:----------:|:----------:
+![Bigotry](./assets/tisane_bigotry.gif)  |  ![Sexual-Harassment](./assets/tisane_sexual_advances.gif)
 
 ### Google Vision API
 
@@ -86,7 +90,7 @@ The recorded audio is turned into text and then analysed through Tisane API for 
 
 #### Project Installation:
 
-**Step 1**:
+**Step 1**\
 To clone and run this application, you'll need [Git](https://git-scm.com) installed on your computer. From your command line:
 
 ```bash
@@ -107,7 +111,8 @@ pip3 install -r requirements.txt
 
 ```
 
-**Step 2: Set up the Constants.py File**:
+**Step 2**\ 
+Set up the Constants.py File:\
 This is where your API keys are needed, as well as any necessities for the APIs.
 Create a **Constants.py** file under the path scripts/libs/ with the content below:
 
@@ -128,7 +133,8 @@ FILE_PATH = "local path to images and audio, for testing e.g. D:\pythonProjects\
 
 ```
 
-**Step 3: The following demonstrates how to run the various aspects of InnoGuard after Setup.**
+**Step 3**\
+The following demonstrates how to run the various aspects of InnoGuard after Setup.
 
 ### OCR Usage
 
