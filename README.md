@@ -100,10 +100,10 @@ git clone https://github.com/InnoGuard/InnoGuard.git
 # Go into the repository
 cd InnoGuard
 
-# Create new Python virtual environment [Optional]
-
 ```
-To get the commands to create your virtual environment, [click here.](https://uoa-eresearch.github.io/eresearch-cookbook/recipe/2014/11/26/python-virtual-env/)
+Create new Python virtual environment [Optional]
+- To get the commands to create your virtual environment, [click here.](https://uoa-eresearch.github.io/eresearch-cookbook/recipe/2014/11/26/python-virtual-env/)
+
 
 ```bash
 # Upon activating the new virtual environment, at root directory, run
@@ -111,8 +111,7 @@ pip3 install -r requirements.txt
 
 ```
 
-**Step 2**\ 
-Set up the Constants.py File:\
+**Step 2 - Set up the Constants.py File**\
 This is where your API keys are needed, as well as any necessities for the APIs.
 Create a **Constants.py** file under the path scripts/libs/ with the content below:
 
