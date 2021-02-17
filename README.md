@@ -50,6 +50,10 @@ The links are stored within a Mongo Database and are determined as **malicious**
 
 Classifies violence against children [Cyberbulling, Sexual Comments and Harassment, Grooming, Emotional Abuse and Suicidal Tendencies] through texts.
 
+Personal Attack  |  Death Threats  |  Bigotry  |  Sexual Harassment
+:----------:|:----------:|:----------:|:----------:
+![Personal-Attack](./assets/tisane_personal_attack_appearance.gif)  |  ![Death-Threats](./assets/tisane_personal_attack_death_threats.gif)  |  ![Bigotry](./assets/tisane_bigotry.gif)  |  ![Sexual-Harassment](./assets/tisane_sexual_advances.gif)
+
 ### Google Vision API
 
 Determines child inappropriate images.
@@ -69,20 +73,20 @@ The recorded audio is turned into text and then analysed through Tisane API for 
 
 ### Configuration
 
-#### Requirements
+#### Requirements:
 
-**APIs Installation**: 
+*APIs Installation*: 
 
 - To get your **Google API Key**, [click here.](https://developers.google.com/maps/documentation/maps-static/get-api-key)
-- To get your **Tisane API Key**, [create an account by clicking here](https://tisane.ai/signup/)
+- To get your **Tisane API Key**, [create an account by clicking here.](https://tisane.ai/signup/)
   - Then go to **API** or **[https://dev.tisane.ai/developer](https://dev.tisane.ai/developer)** to get your primary and secondary Tisane API keys.
 
-**MongoDB Creation**:
-To create a Mongo Database, [click here.](https://www.mongodb.com/basics/create-database)
+*MongoDB Creation*:
+- To create a Mongo Database, [click here.](https://www.mongodb.com/basics/create-database)
 
 #### Project Installation:
 
-**Step 1**
+**Step 1**:
 To clone and run this application, you'll need [Git](https://git-scm.com) installed on your computer. From your command line:
 
 ```bash
@@ -124,7 +128,7 @@ FILE_PATH = "local path to images and audio, for testing e.g. D:\pythonProjects\
 
 ```
 
-**Step 3: This demonstrates how to run the various aspects of InnoGuard**
+**Step 3: The following demonstrates how to run the various aspects of InnoGuard after Setup.**
 
 ### OCR Usage
 
@@ -187,7 +191,7 @@ D:\uploads\test.png
 
 More coming soon...
 
-This requires .wav files. To convert files, [click here!](https://cloudconvert.com/mp3-to-wav)
+This requires .wav files. To convert files, [click here!](https://cloudconvert.com/mp3-to-wav).
 
 ```bash
 
