@@ -1,7 +1,5 @@
 # InnoGuard
 
-**N.B: More details and patches coming soon...**
-
 InnoGuard is a child protection tool that provides protection for children by classifying violence against children through texts and audio, and determining age inappropriate images and links.
 
 [![InnoGuard](./assets/innoguard_title.png)]()
@@ -82,6 +80,19 @@ The recorded audio is turned into text and then analysed through Tisane API for 
 *APIs Installation*: 
 
 - To get your **Google API Key**, [click here.](https://developers.google.com/maps/documentation/maps-static/get-api-key)
+  - Make sure to enable the relevant APIs:
+    - Safe Browsing API (Legacy)
+    - Safe Browsing API
+    - Safebrowsing Realtime API
+    - Google Cloud APIs
+    - Cloud Vision API
+    - Cloud Speech-to-Text API
+    - Cloud Natural Language API
+    - Cloud Video Intelligence API (to be used soon...)
+
+- For Google Speech to Text API, a few extra steps are needed, [click here, navigate to the "Setting up authentication header"](https://cloud.google.com/speech-to-text/docs/libraries) and follow the steps.
+  - Secure your downloaded json file in your computer. The path to this json file will be needed for the config setup later on.
+
 - To get your **Tisane API Key**, [create an account by clicking here.](https://tisane.ai/signup/)
   - Then go to **API** or **[https://dev.tisane.ai/developer](https://dev.tisane.ai/developer)** to get your primary and secondary Tisane API keys.
 
@@ -118,6 +129,10 @@ Create a **Constants.py** file under the path scripts/libs/ with the content bel
 ```bash
 
 GC_API_KEY = 'your_google_api_key_here'
+
+# json file previously downloaded upon google service account setup. 
+GOOGLE_APPLICATION_CREDENTIALS = 'path_to_google_service_account_json_file.json'
+
 MONGODB = "your_mongodb_address"
 
 # Used for Google Vision API
@@ -196,7 +211,7 @@ D:\uploads\test.png
 
 More coming soon...
 
-This requires .wav files. To convert files, [click here!](https://cloudconvert.com/mp3-to-wav).
+This requires .wav files. To convert files, [click here!](https://cloudconvert.com/mp3-to-wav)
 
 ```bash
 
@@ -221,6 +236,8 @@ The team at InnoGuard plans to implement:
 - **Caribbean Lingo Dataset**: Currently, the APIs used to not consider Caribbean Lingo as shown in the gif below where it detects the Caribbean Phrase "Buss ah wine" as a person.
   - Thus, the new model would be emphasized and trained against Caribbean Speech Datasets to detect harmful Caribbean Lingo.
 
+  ![caribbean-lingo](./assets/bussahwine.gif)
+
 - **Chatbot Assistant**:  InnoGuard shall provide real-time emotional support via a chatbot to give tips and consolation.
 
 ## License
@@ -230,4 +247,6 @@ InnoGuard is licensed under the terms of the MIT Open Source license and is avai
 ## Links
 * [YouTube Pitch](https://youtu.be/Ncit5I1Bsxo)
 * Live Website Link Coming soon ...
+
+**N.B: More details and patches coming soon...**
 

@@ -7,7 +7,7 @@ import libs.Constants
 
 
 # user = bh.get_username()
-API_KEY = libs.Constants.GC_API_KEY
+# API_KEY = libs.Constants.GC_API_KEY - don't need this?
 __file__ = libs.Constants.FILE_PATH
 
 

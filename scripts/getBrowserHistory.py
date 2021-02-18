@@ -6,6 +6,7 @@ import csv
 import libs.Constants
 import libs.mongodb
 
+
 API_KEY = libs.Constants.GC_API_KEY
 
 # @TODO: Limit browser history to just 10 first or last sites for demo
