@@ -2,7 +2,7 @@
 
 InnoGuard is a child protection tool that provides protection for children by classifying violence against children through texts and audio, and determining age inappropriate images and links.
 
-[![InnoGuard](https://imgur.com/a/MeGWu1E)]()
+[![InnoGuard](https://imgur.com/a/MeGWu1E.png)]()
 
 ## Table of Contents
 
@@ -26,7 +26,7 @@ InnoGuard is a child protection tool that provides protection for children by cl
 ## InnoGuard Tools
 
 InnoGuards Overall Architecture is shown below.
-[![InnoGuard-Architecture](https://imgur.com/a/IDYWyo8)]()
+[![InnoGuard-Architecture](https://imgur.com/a/IDYWyo8.jpg)]()
 
 ### OCR Text Detection and Recognition
 
@@ -34,7 +34,7 @@ Extracts text from images through screenshots.
 
 Example WhatsApp Screenshot   |  OCR Text Extraction
 :----------------------------:|:-------------------------:
-![Ocr-Screenshot](https://imgur.com/a/1sVMymA)  |  ![Text-Extraction](https://imgur.com/a/c0neOZ6)
+![Ocr-Screenshot](https://imgur.com/a/1sVMymA.png)  |  ![Text-Extraction](https://imgur.com/a/c0neOZ6.png)
 
 ### Safe Browsing
 
@@ -42,7 +42,7 @@ BrowserHistory Module and SafeBrowsing API are used to extract one’s browsing 
 
 The links are stored within a Mongo Database and are determined as **malicious** or not.
 
-![Safe-browsing](https://imgur.com/a/Y5VDFZO)
+![Safe-browsing](https://imgur.com/a/Y5VDFZO.gif)
 
 ### Tisane API
 
@@ -50,17 +50,17 @@ Classifies violence against children [Cyberbulling, Sexual Comments and Harassme
 
 Personal Attack  |  Death Threats  
 :----------:|:----------:
-![Personal-Attack](https://imgur.com/a/UQX61Uu)  |  ![Death-Threats](https://imgur.com/a/phh2sFC)  
+![Personal-Attack](https://imgur.com/a/UQX61Uu.gif)  |  ![Death-Threats](https://imgur.com/a/phh2sFC.gif)  
 
 Bigotry  |  Sexual Harassment
 :----------:|:----------:
-![Bigotry](https://imgur.com/a/TbcJ8Jr)  |  ![Sexual-Harassment](https://imgur.com/a/viaavLm)
+![Bigotry](https://imgur.com/a/TbcJ8Jr.gif)  |  ![Sexual-Harassment](https://imgur.com/a/viaavLm.gif)
 
 ### Google Vision API
 
 Determines child inappropriate images.
 
-![vision-api](https://imgur.com/a/imSqA8C)
+![vision-api](https://imgur.com/a/imSqA8C.gif)
 
 ### Google Speech API
 
@@ -68,7 +68,7 @@ Allows audio analysis by turning speech to text.
 
 The recorded audio is turned into text and then analysed through Tisane API for violence against children as shown below.
 
-![speech-api](https://imgur.com/a/IBvCu0V)
+![speech-api](https://imgur.com/a/IBvCu0V.gif)
 
 
 ## Usage
@@ -245,7 +245,7 @@ The team at InnoGuard plans to implement:
 InnoGuard is licensed under the terms of the MIT Open Source license and is available for free.
 
 ## Links
-* [YouTube Pitch](https://youtu.be/Ncit5I1Bsxo)
+* [YouTube Pitch](https://youtu.be/Ncit5I1Bsxo.gif)
 * Live Website Link Coming soon ...
 
 **N.B: More details and patches coming soon...**
