@@ -169,6 +169,8 @@ python getBrowserHistory.py
 
 ```
 
+You can use [MongoDB Compass](https://www.mongodb.com/products/compass) to view the documents created.
+
 ### Tisane API Usage
 
 ```bash
@@ -183,7 +185,7 @@ python text_detect.py
 # Example Sentence
 You are gorgeous.
 
-# Output from these commands will be displayed via the terminal.
+# Output containing the sentiment, type of content and severity, will be displayed via the terminal.
 
 ```
 
@@ -203,19 +205,16 @@ python getImageResults.py
 # Example of image path:
 D:\uploads\test.png
 
-# Output from these commands will be displayed via the terminal.
+# Output containing the likelihood of an image to be; Adult , Spoof , Medical , Violence , and Racy, will be displayed via the terminal.
 
 ```
 
 ### Google Speech Usage
 
-More coming soon...
-
-This requires .wav files. To convert files, [click here!](https://cloudconvert.com/mp3-to-wav)
+This requires **.wav** files. To convert files, [click here!](https://cloudconvert.com/mp3-to-wav)\
+Cloud Storage will be used for the final product and to better process audio files longer than 1 minute.
 
 ```bash
-
-# Attach an audio .wav file called "test.wav" to the root folder
 
 # From the root folder (InnoGuard), go to the Scripts Folder
 cd scripts
@@ -223,7 +222,11 @@ cd scripts
 # Execute the following Python script:
 python speechToText.py
 
-# Output from these commands will be displayed via the terminal.
+# A prompt to enter an Audio Path will appear:
+# Example of audio path:
+D:\uploads\test.wav
+
+# Output containing the text from audio will be displayed via the terminal.
 
 ```
 
