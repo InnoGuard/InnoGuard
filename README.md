@@ -80,7 +80,7 @@ The recorded audio is turned into text and then analysed through Tisane API for 
 *APIs Installation*: 
 
 - To get your **Google API Key**, [click here.](https://developers.google.com/maps/documentation/maps-static/get-api-key)
-  - Make sure to enable the relevant APIs:
+  - Make sure to enable the relevant APIs or just enable all:
     - Safe Browsing API (Legacy)
     - Safe Browsing API
     - Safebrowsing Realtime API
